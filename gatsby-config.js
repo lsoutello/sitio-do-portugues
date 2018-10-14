@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Sítio do Português',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -17,5 +17,13 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Prociono`,
+          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+        ]
+    }
   ],
 }

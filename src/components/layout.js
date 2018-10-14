@@ -4,7 +4,10 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
+import './header.css';
 import './layout.css'
+import landing from "../images/landing.png"
+import Landing from './landing';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -29,12 +32,13 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
+        <Landing/>
         <div
           style={{
             margin: '0 auto',
-            maxWidth: 960,
+            width: '100%',
             padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
+            paddingTop: 0
           }}
         >
           {children}
